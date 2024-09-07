@@ -10,7 +10,6 @@ Este é um projeto de uma **agenda digital de contatos**, criado para a **Imers�
 - **CSS**: Estilização adicional.
 - **JavaScript**: Funcionalidades de manipulação de contatos.
 - **Bootstrap 5**: Framework para estilização responsiva.
-- **Git**: Controle de versão.
 
 ## Funcionalidades
 
