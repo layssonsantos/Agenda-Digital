@@ -4,12 +4,14 @@ Este é um projeto de uma **agenda digital de contatos**, criado para a **Imers�
 
 ![print do site](./assets/printcontato.png)
 
+## 📜 Descrição
+A Agenda de Contatos Digital é um projeto web que permite o gerenciamento de contatos, oferecendo funcionalidades de adicionar, editar, excluir, listar e pesquisar contatos. Cada contato pode ser composto por nome e celular, e o sistema evita duplicações e entradas inválidas. A interface é simples e amigável, com foco em acessibilidade e fácil navegação, além de possuir validações para campos vazios e mascaramento de números de celular.
+
 ## 🛠️ Ferramentas Utilizadas
 
 - **HTML**: Estrutura da página.
 - **CSS**: Estilização adicional.
 - **JavaScript**: Funcionalidades de manipulação de contatos.
-- **Bootstrap 5**: Framework para estilização responsiva.
 
 ## Funcionalidades
 
