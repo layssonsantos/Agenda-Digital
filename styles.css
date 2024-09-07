@@ -1,59 +1,147 @@
+/* Definições básicas */
 body {
-  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+  background-color: #e1e7ee;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
+/* Centralizar o container */
 .container {
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"] {
-  border-radius: 0.5rem;
+/* Título */
+h1 {
+  background-color: #007bff; /* Fundo azul */
+  color: white; /* Cor do texto branca */
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Centralizar o texto */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo dos inputs e botões */
+.form-row, .search-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-button {
-  border-radius: 0.5rem;
+.form-control:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.table th, .table td {
-  text-align: center;
+/* Estilo básico para os botões */
+.btn {
+  padding: 6px 12px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.table-hover tbody tr:hover {
-  background-color: #f1f1f1;
+/* Botão de editar (estilo primário) */
+.editar {
+  background-color: #007bff; /* Cor similar ao btn-primary do Bootstrap */
+  color: white;
 }
 
-.card {
-  border-radius: 1rem;
-  overflow: hidden;
+/* Botão de excluir (estilo perigoso) */
+.excluir {
+  background-color: #dc3545; /* Cor similar ao btn-danger do Bootstrap */
+  color: white;
 }
 
-.card-header {
+/* Efeitos ao passar o mouse nos botões */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Botões com tamanho pequeno */
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Botões */
+.btn-primary {
   background-color: #007bff;
   color: white;
 }
 
-.card-body {
-  padding: 2rem;
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
 }
 
-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.btn-info {
+  background-color: #17a2b8;
+  color: white;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Estilo da tabela */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #f1f1f1;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Ações */
+td button {
+  margin-right: 5px;
+}
+
+td button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  .container {
-    padding: 20px;
+  .form-row, .search-section {
+    flex-direction: column;
   }
-  
-  .card {
-    padding: 1rem;
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-control {
+    margin-bottom: 10px;
   }
 }

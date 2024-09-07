@@ -10,8 +10,8 @@ function adicionarContato() {
   }
 
   // Verificar se o contato já existe (baseado no nome ou telefone)
-  const contatoExistente = contatos.find(contato => 
-    contato.nome.toLowerCase() === novoNome.toLowerCase() || 
+  const contatoExistente = contatos.find(contato =>
+    contato.nome.toLowerCase() === novoNome.toLowerCase() ||
     contato.telefone === novoTelefone
   );
 
@@ -41,13 +41,14 @@ function renderizarTabela(listaContatos) {
       <td>${contato.nome}</td>
       <td>${contato.telefone}</td>
       <td>
-      <button class="btn btn-primary btn-sm" onclick="editarContato(${index})">Editar</button>
-      <button class="btn btn-danger btn-sm" onclick="excluirContato(${index})">Excluir</button>
+      <button class="btn editar" onclick="editarContato(${index})">Editar</button>
+      <button class="btn excluir" onclick="excluirContato(${index})">Excluir</button>
       </td>
     `;
     tabelaBody.appendChild(novaLinha);
   });
 }
+
 
 // Função para pesquisar um contato por nome ou telefone
 function pesquisarContato() {
@@ -58,7 +59,7 @@ function pesquisarContato() {
     return;
   }
 
-  const resultados = contatos.filter(contato => 
+  const resultados = contatos.filter(contato =>
     contato.nome.toLowerCase().includes(termoPesquisa) ||
     contato.telefone.includes(termoPesquisa)
   );
