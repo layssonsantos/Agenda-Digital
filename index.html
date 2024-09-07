@@ -13,13 +13,13 @@
     <!-- Formulário de Adição de Contato -->
     <div class="form-row">
       <input type="text" id="novoNome" class="form-control" placeholder="Nome">
-      <input type="text" id="novoTelefone" class="form-control" placeholder="Telefone" oninput="mascaraTelefone(this)">
+      <input type="text" id="novoTelefone" class="form-control" placeholder="Celular" oninput="mascaraTelefone(this)">
       <button class="btn btn-primary" onclick="adicionarContato()">Adicionar</button>
     </div>
 
     <!-- Seção de Pesquisa -->
     <section class="search-section">
-      <input type="text" id="pesquisa" class="form-control" placeholder="Pesquisar por nome ou telefone">
+      <input type="text" id="pesquisa" class="form-control" placeholder="Pesquisar por nome ou celular">
       <button class="btn btn-secondary" onclick="pesquisarContato()">Pesquisar</button>
       <button class="btn btn-info" onclick="listarTodos()">Listar Todos</button>
     </section>
@@ -29,7 +29,7 @@
       <thead>
         <tr>
           <th>Nome</th>
-          <th>Telefone</th>
+          <th>Celular</th>
           <th>Ações</th>
         </tr>
       </thead>
